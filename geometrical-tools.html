@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Category</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg">
+    <navbar class="navbar">
+        <div class="ele">
+            <div class="logo"></div>
+            <a href="#" class="options">Home</a>
+            <a href="#" class="options">Login</a>
+            <a href="#" class="options">Cart</a>
+            <a href="#" class="options">About Us</a>
+        </div>
+
+        <div class="cart" id="cart">
+            <h2></h2>
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="total">₹0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+
+    </navbar>
+<!-- main flexbox -->
+    <div class="select"> 
+        <!-- blue/white wala div -->
+        <div class="shopa">
+            <h2>Stationery A</h2>
+            <!-- cards wala div -->
+            <div class="main-sec">
+
+
+                <!-- card1 -->
+                <div class="Rulers">
+                    <!-- iske niche ka mostly copy paste kar -->
+                    <div class="box">
+                        <div class="image">
+                            <!-- change image -->
+                            <img src="rulers.jpeg" alt="Ruler image">
+                        </div>
+                        <div class="text">
+                            <h2>
+                                <!-- change this -->
+                                Rulers
+                            </h2>
+                            <!-- change rate -->
+                            <div class="rate">Rate : ₹ 30</div>
+                        </div>
+                        <!-- <button id="but"><a href="pens.html">Add to Cart</a></button> -->
+                        <button id="but" onclick="addToCart('Ruler', 30.00)">Add to Cart</button>
+
+                    </div>
+                </div>
+
+                <!-- card2 -->
+                <div class="setsquare">
+                    <div class="box">
+                        <div class="image">
+                            <img src="setsquare.webp" alt="image of sheets">
+                        </div>
+                        <div class="text">
+                            <h2>
+                                Set-Square
+                            </h2>
+                            <div class="rate">Rate : ₹ 20</div>
+                        </div>
+                        <!-- <button id="but"><a href="pens.html">Add to Cart</a></button> -->
+                        <button id="but" onclick="addToCart('Set-Square', 20.00)">Add to Cart</button>
+
+                    </div>
+                </div>
+                <div class="rounder">
+                    <div class="box">
+                        <div class="image">
+                            <img src="rounder.jpg" alt="drawing sheet image">
+                        </div>
+                        <div class="text">
+                            <h2>
+                                Rounder
+                            </h2>
+                            <div class="rate">Rate : ₹ 20</div>
+                        </div>
+                        <!-- <button id="but"><a href="pens.html">Add to Cart</a></button> -->
+                        <button id="but" onclick="addToCart('Rounder', 20.00)">Add to Cart</button>
+
+                    </div>
+                </div>
+
+                <div class="protractor">
+                    <div class="box">
+                        <div class="image">
+                            <img src="protractor.jpg" alt="image">
+                        </div>
+                        <div class="text">
+                            <h2>
+                                Protractor
+                            </h2>
+                            <div class="rate">Rate : ₹ 10</div>
+                        </div>
+                        <!-- <button id="but"><a href="pens.html">Add to Cart</a></button> -->
+                        <button id="but" onclick="addToCart('Protractor', 10.00)">Add to Cart</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="shopa">
+            <h2>Stationery B</h2>
+            <div class="main-sec">
+                <div class="Rulers">
+                    <div class="box">
+                        <div class="image">
+                            <img src="rulers.jpeg" alt="image of sheets">
+                        </div>
+                        <div class="text">
+                            <h2>
+                                Rulers
+                            </h2>
+                            <div class="rate">Rate : ₹ 40</div>
+                        </div>
+                        <!-- <button id="but"><a href="pens.html">Add to Cart</a></button> -->
+                        <button id="but" onclick="addToCart('Ruler', 40.00)">Add to Cart</button>
+
+                    </div>
+                </div>
+                <div class="setsquare">
+                    <div class="box">
+                        <div class="image">
+                            <img src="setsquare.webp" alt="image of sheets">
+                        </div>
+                        <div class="text">
+                            <h2>
+                                Set-Square
+                            </h2>
+                            <div class="rate">Rate : ₹ 20</div>
+                        </div>
+                        <!-- <button id="but"><a href="pens.html">Add to Cart</a></button> -->
+                        <button id="but" onclick="addToCart('Set-Square', 20.00)">Add to Cart</button>
+
+                    </div>
+                </div>
+                <div class="rounder">
+                    <div class="box">
+                        <div class="image">
+                            <img src="rounder.jpg" alt="image">
+                        </div>
+                        <div class="text">
+                            <h2>
+                                Rounder
+                            </h2>
+                            <div class="rate">Rate : ₹ 10</div>
+                        </div>
+                        <!-- <button id="but"><a href="pens.html">Add to Cart</a></button> -->
+                        <button id="but" onclick="addToCart('Rounder', 10.00)">Add to Cart</button>
+
+                    </div>
+                </div>
+
+                <div class="protractor">
+                    <div class="box">
+                        <div class="image">
+                            <img src="protractor.jpg" alt="image">
+                        </div>
+                        <div class="text">
+                            <h2>
+                                Protractor
+                            </h2>
+                            <div class="rate">Rate : ₹ 5</div>
+                        </div>
+                        <!-- <button id="but"><a href="pens.html">Add to Cart</a></button> -->
+                        <button id="but" onclick="addToCart('Protractor', 5.00)">Add to Cart</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

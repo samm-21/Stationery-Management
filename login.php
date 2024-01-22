@@ -1,0 +1,46 @@
+<?php include('server.php') ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+<navbar class="navbar">
+        <div class="ele">
+            <div class="logo"></div>
+            <a href="index.html" class="options">Home</a>
+            <a href="login.php" class="options">Login</a>
+            <a href="cart.html" class="options">Cart</a>
+                <div class="cart" id="cart">
+                    <h2></h2>
+                    <ul id="cart-items"></ul>
+                    <p>Total: <span id="total">₹0.00</span></p>
+                    <button onclick="checkout()">Checkout</button>
+                </div>
+            <a href="#aboutus" class="options">About Us</a>
+        </div>
+
+    </navbar>
+    <div class="title"><form class="login" method="post" action="login.php">
+        <?php include('errors.php'); ?>
+        <h2>Login</h2>
+        <input type="text" name="username" required placeholder="Login id" class="logs">
+        <input type="password" name="password" required placeholder="Password" class="logs">
+        <input type="submit" name="login_user" value="Login" class="sub">
+        <div class="register">
+            <a href="sign.html">New user? Sign-up!</a>
+        </div>
+    </form>
+    </div>
+    <section id="aboutus">
+            <footer>
+                This is a Stationery management website created for a college mini project by second year students for learning purposes.This is only a simulation consisting of front end with a little bit of backend connectivity.This is a Stationery management website created for a college mini project by second year students for learning purposes.This is only a simulation consisting of front end with a little bit of backend connectivity.This is a Stationery management website created for a college mini project by second year students for learning purposes.This is only a simulation consisting of front end with a little bit of backend connectivity
+            </footer>
+        </section>
+    
+    
+</body>
+</html>
